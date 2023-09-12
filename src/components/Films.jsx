@@ -1,24 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import { useQuery, useMutation} from '@tanstack/react-query';
+import React from 'react'
+import { useParams } from 'react-router-dom'
 import LayoutUl from '../layouts/LayoutUl';
-import { BeatLoader } from 'react-spinners';
+import { BeatLoader } from 'react-spinners'
 
 
-const override = {
-    display: "block",
-    margin: "100px auto",
-    borderColor: "#36d7b7",
-};
-export default function List({ url, headline }) {
-    const { isLoading, isError, data, error} = useQuery({queryKey: [`${url}`], queryFn:  () => {
+
+export default function Films() {
+    const { film } = useParams();
+    const url = `https://api.themoviedb.org/3/search/movie?query=${film}&include_adult=false&language=en-US&page=1`
+    const { isLoading, isError, data, error} = useQuery({queryKey: [`${film}`], queryFn:  () => {
         return  axios.get(url, {headers: headers,})
     }})
-    
 
-    if(isError){
-        return <h2 className='mt-44'>{error.message}</h2>
+    if (isError) {
+        return <h2 className='mt-44'>error</h2>
     }
+
 
     if(isLoading){
         return <BeatLoader
@@ -31,13 +30,9 @@ export default function List({ url, headline }) {
     />
     }
 
-
-
     return (
-        <>
-            <LayoutUl data={data} />
-        </>
-            );
+        <LayoutUl data={data} />
+    )      
 }
 
 
