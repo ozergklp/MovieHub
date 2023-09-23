@@ -1,16 +1,10 @@
 {
-
   "name": "your-project-name",
   "version": "0.0.0",
-  "repository": {
-    "url": "git+https://github.com/ozergklp/MovieHub.git"
-  },
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -18,7 +12,6 @@
     "@tanstack/react-query": "^4.35.0",
     "@tanstack/react-query-devtools": "^4.35.0",
     "axios": "^1.5.0",
-    "get-content-logger": "^1.1.3",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
@@ -29,6 +22,7 @@
     "react-spinners": "^0.13.8",
     "sort-by": "^0.0.2"
   },
+
   "devDependencies": {
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
@@ -38,9 +32,10 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "gh-pages": "^6.0.0",
     "postcss": "^8.4.29",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.5"
   }
+
 }
+
