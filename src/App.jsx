@@ -13,8 +13,9 @@ import List from './components/List';
 
 import './index.css'
 import Film from './components/Film';
+import Home from './components/Home';
 
-const Home = () => <h2 className='mt-96'>Movie Hub</h2>;
+
 const NotFound = () => <h2>Not Found</h2>;
 
 const nowPlayingUrl = 'https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1';
