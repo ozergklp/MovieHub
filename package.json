@@ -1,11 +1,16 @@
 {
+
   "name": "your-project-name",
-  "private": true,
   "version": "0.0.0",
+  "repository": {
+    "url": "git+https://github.com/ozergklp/MovieHub.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
