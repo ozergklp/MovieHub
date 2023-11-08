@@ -6,21 +6,21 @@ MovieHub is a React project that's perfect for anyone who loves movies. It taps 
 
 MovieHub offers an array of features to enhance your movie exploration:
 
-- **Now Playing**: Get the scoop on movies currently lighting up the big screen.
-- **Popular Picks**: Browse the movies that are trending and capturing audiences around the globe.
-- **Top Rated**: Discover movies that have been acclaimed by critics and fans alike for their excellence.
-- **Search Bar**: Find any movie in the extensive TMDB database with an easy-to-use search feature.
-- **Movie Details**: Click on any movie to view its detailed information, including plot summaries, cast lists, and more.
+- **Now Playing**: Catch the current box office hits.
+- **Popular Picks**: See what films are trending.
+- **Top Rated**: Explore highly-rated movies.
+- **Search Bar**: Easily search the TMDB database.
+- **Movie Details**: Get the details with a click.
 
 ## Technologies Used
 
-- **React:** JavaScript library for creating user interfaces with a focus on a reactive user experience.
-- **React Router:** A tool for handling in-app navigation and rendering components seamlessly.
-- **Tailwind CSS:** A utility-first CSS framework for quickly designing custom user interfaces.
-- **JavaScript:** Programming language for implementing app functionalities and interactions.
-- **React Query:** Hooks for managing, caching, and synchronizing asynchronous and remote data.
-- **Vite:** A modern frontend build tool that significantly improves the development experience.
-- 
+- **React**: For building the user interface.
+- **React Router**: For app navigation.
+- **Tailwind CSS**: For styling.
+- **JavaScript**: For functionality.
+- **React Query**: For data fetching.
+- **Vite**: For fast development.
+  
 ## Screenshots
 
 ![an example](./images/1.png)
